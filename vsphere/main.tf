@@ -8,11 +8,11 @@ terraform {
 
 
 provider "vsphere" {
-  user           = var.username
+  /* user           = var.username
   password       = var.password
   vsphere_server = var.vcenter
   
-  # If you have a self-signed cert
+  # If you have a self-signed cert*/
   allow_unverified_ssl = true
 }
 
@@ -91,8 +91,8 @@ resource "vsphere_virtual_machine" "meyers00" {
         computer_name = "TROSVMeyers00"
         admin_password = "Gr33kMyth!"
         join_domain = "corp.tylertechnologies.com"
-        domain_admin_user = var.domain_user
-        domain_admin_password = var.domain_password
+        domain_admin_user = "tyler\\elmmeyers"
+        domain_admin_password = "S@X0n68.P#uck!"
         time_zone = 35
         auto_logon = true
         auto_logon_count = 1
