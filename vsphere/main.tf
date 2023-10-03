@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-	vsphere = {
-		source = "hashicorp/vsphere"
-	}
-  }
-}
-
-
 provider "vsphere" {
   user           = "mike.meyers@tylertech.com"
   password       = "9j2YUCJ5@CJeCU@nho4Vr!"
