@@ -1,6 +1,6 @@
 provider "vsphere" {
   user           = "mike.meyers@tylertech.com"
-  password       = "9j2YUCJ5@CJeCU@nho4Vr!"
+  password       = ""
   vsphere_server = var.vcenter
   
   # If you have a self-signed cert
